@@ -1,0 +1,3 @@
+Se desarrollara un sistema que pueda recibir una expresión aritmética considerando estos operadores ( + - * / ^ ) y operándos de un solo dígito.   
+La expresión la podrá recibir desde HTML en caso de trabajar su proyecto en el cliente o si deciden usar nodeJs se podrá recompilar la aplicación cada que se cambie la expresión.   
+Con esta expresión se deberá crear un árbol binario, de este árbol binario se va a imprimir el recorrido preorder y el recorrido postorder, una vez que se tengan ambos recorridos, se deberán resolver usando las estructuras de datos adecuadas para cada caso, para mostrar en consola o en un HTML el resultado final.   
