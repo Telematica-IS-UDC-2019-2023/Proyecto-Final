@@ -12,14 +12,14 @@
         recorrerEnOrden();
     }
     function recorrerEnOrden() {
-        var log1 = [],
-            log2 = [];
+        var array1 = [],
+            array2 = [];
     
-        Recorrido.preorden(nodoActual, log1);
-        console.info("Recorrido PreOrden", log1);
+        Recorrido.preorden(nodoActual, array1);
+        console.info("Recorrido PreOrden", array1);
     
-        Recorrido.postorden(nodoActual, log2);;
-        console.info("Recorrido PostOrden", log2);
+        Recorrido.postorden(nodoActual, array2);;
+        console.info("Recorrido PostOrden", array2);
     
     }
     var Analizar = {
@@ -35,12 +35,12 @@
             }
         },
         prepararExpresion: function (expresion) {
-            var simbolos = "+-*/()^";
+            var operadores = "+-*/()^";
             var salida = "";
             expresion = expresion.replace(/\\s+/, '');
             expresion = "(" + expresion + ")";
             for (var i = 0; i < expresion.length; i++) {
-                if (simbolos.contains(expresion.charAt(i))) {
+                if (operadores.contains(expresion.charAt(i))) {
                     salida += " " + expresion.charAt(i) + " ";
                 } else {
                     salida += expresion.charAt(i);
