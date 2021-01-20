@@ -16,10 +16,10 @@
             log2 = [];
     
         Recorrido.preorden(nodoActual, log1);
-        console.info("Recorrido PreOrden", log1)
+        console.info("Recorrido PreOrden", log1);
     
-        Recorrido.postorden(nodoActual, log2);
-        console.info("Recorrido PostOrden", log2)
+        Recorrido.postorden(nodoActual, log2);;
+        console.info("Recorrido PostOrden", log2);
     
     }
     var Analizar = {
@@ -70,7 +70,7 @@
                     break;
                 case 2:
                     while (P[P.length - 1] != "(") {
-                        S.push(P.pop())
+                        S.push(P.pop());
                     }
                     P.pop();
                     E.pop();
@@ -118,7 +118,7 @@
         },
         getNumber: function (v) {
             if (isNaN(v)) {
-                return v.data
+                return v.data;
             }
             return v;
         },
