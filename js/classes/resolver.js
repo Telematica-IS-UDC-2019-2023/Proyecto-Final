@@ -1,8 +1,8 @@
 
 
     if (!String.contains) {
-        String.prototype.contains = function (e) {
-            return this.indexOf(e) >= 0;
+        String.prototype.contains = function (element) {
+            return this.indexOf(element) >= 0;
         }
     }
     export function Resolver() {
